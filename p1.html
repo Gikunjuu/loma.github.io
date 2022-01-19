@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>Lomanized</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="canonical" href="index.html">
+    <link rel="preload" href="resources/fonts/7ce0a2f5-eb00-46aa-919c-5b3f3667646c.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preconnect" href="www.googletagmanager.com/" crossorigin="">
+    <link rel="preconnect" href="www.google-analytics.com/" crossorigin="">
+    <link rel="stylesheet" href="resources/css/site.minf5c5.css">
+    <meta property="og:title" content="Photographer-Lomanized">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="resources/images/social-share.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Photographer-Lomanized">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="resources/images/social-share.png">
+    <script>
+        ! function(e, t, n) {
+            function o(e, t) {
+                return typeof e === t
+            }
+
+            function a() {
+                var e, t, n, a, r, i, s;
+                for (var c in u)
+                    if (u.hasOwnProperty(c)) {
+                        if (e = [], t = u[c], t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length))
+                            for (n = 0; n < t.options.aliases.length; n++) e.push(t.options.aliases[n].toLowerCase());
+                        for (a = o(t.fn, "function") ? t.fn() : t.fn, r = 0; r < e.length; r++) i = e[r], s = i.split("."), 1 === s.length ? Modernizr[s[0]] = a : (!Modernizr[s[0]] || Modernizr[s[0]] instanceof Boolean || (Modernizr[s[0]] = new Boolean(Modernizr[s[0]])), Modernizr[s[0]][s[1]] = a), l.push((a ? "" : "no-") + s.join("-"))
+                    }
+            }
+
+            function r(e) {
+                var t = f.className,
+                    n = Modernizr._config.classPrefix || "";
+                if (m && (t = t.baseVal), Modernizr._config.enableJSClass) {
+                    var o = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+                    t = t.replace(o, "$1" + n + "js$2")
+                }
+                Modernizr._config.enableClasses && (t += " " + n + e.join(" " + n), m ? f.className.baseVal = t : f.className = t)
+            }
+
+            function i() {
+                return "function" != typeof t.createElement ? t.createElement(arguments[0]) : m ? t.createElementNS.call(t, "http://www.w3.org/2000/svg", arguments[0]) : t.createElement.apply(t, arguments)
+            }
+
+            function s() {
+                var e = t.body;
+                return e || (e = i(m ? "svg" : "body"), e.fake = !0), e
+            }
+
+            function c(e, n, o, a) {
+                var r, c, l, u, d = "modernizr",
+                    m = i("div"),
+                    h = s();
+                if (parseInt(o, 10))
+                    for (; o--;) l = i("div"), l.id = a ? a[o] : d + (o + 1), m.appendChild(l);
+                return r = i("style"), r.type = "text/css", r.id = "s" + d, (h.fake ? h : m).appendChild(r), h.appendChild(m), r.styleSheet ? r.styleSheet.cssText = e : r.appendChild(t.createTextNode(e)), m.id = d, h.fake && (h.style.background = "", h.style.overflow = "hidden", u = f.style.overflow, f.style.overflow = "hidden", f.appendChild(h)), c = n(m, e), h.fake ? (h.parentNode.removeChild(h), f.style.overflow = u, f.offsetHeight) : m.parentNode.removeChild(m), !!c
+            }
+            var l = [],
+                u = [],
+                d = {
+                    _version: "3.6.0",
+                    _config: {
+                        classPrefix: "",
+                        enableClasses: !0,
+                        enableJSClass: !0,
+                        usePrefixes: !0
+                    },
+                    _q: [],
+                    on: function(e, t) {
+                        var n = this;
+                        setTimeout(function() {
+                            t(n[e])
+                        }, 0)
+                    },
+                    addTest: function(e, t, n) {
+                        u.push({
+                            name: e,
+                            fn: t,
+                            options: n
+                        })
+                    },
+                    addAsyncTest: function(e) {
+                        u.push({
+                            name: null,
+                            fn: e
+                        })
+                    }
+                },
+                Modernizr = function() {};
+            Modernizr.prototype = d, Modernizr = new Modernizr;
+            var f = t.documentElement,
+                m = "svg" === f.nodeName.toLowerCase();
+            m || ! function(e, t) {
+                function n(e, t) {
+                    var n = e.createElement("p"),
+                        o = e.getElementsByTagName("head")[0] || e.documentElement;
+                    return n.innerHTML = "x<style>" + t + "</style>", o.insertBefore(n.lastChild, o.firstChild)
+                }
+
+                function o() {
+                    var e = E.elements;
+                    return "string" == typeof e ? e.split(" ") : e
+                }
+
+                function a(e, t) {
+                    var n = E.elements;
+                    "string" != typeof n && (n = n.join(" ")), "string" != typeof e && (e = e.join(" ")), E.elements = n + " " + e, l(t)
+                }
+
+                function r(e) {
+                    var t = y[e[v]];
+                    return t || (t = {}, g++, e[v] = g, y[g] = t), t
+                }
+
+                function i(e, n, o) {
+                    if (n || (n = t), d) return n.createElement(e);
+                    o || (o = r(n));
+                    var a;
+                    return a = o.cache[e] ? o.cache[e].cloneNode() : p.test(e) ? (o.cache[e] = o.createElem(e)).cloneNode() : o.createElem(e), !a.canHaveChildren || h.test(e) || a.tagUrn ? a : o.frag.appendChild(a)
+                }
+
+                function s(e, n) {
+                    if (e || (e = t), d) return e.createDocumentFragment();
+                    n = n || r(e);
+                    for (var a = n.frag.cloneNode(), i = 0, s = o(), c = s.length; c > i; i++) a.createElement(s[i]);
+                    return a
+                }
+
+                function c(e, t) {
+                    t.cache || (t.cache = {}, t.createElem = e.createElement, t.createFrag = e.createDocumentFragment, t.frag = t.createFrag()), e.createElement = function(n) {
+                        return E.shivMethods ? i(n, e, t) : t.createElem(n)
+                    }, e.createDocumentFragment = Function("h,f", "return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&(" + o().join().replace(/[\w\-:]+/g, function(e) {
+                        return t.createElem(e), t.frag.createElement(e), 'c("' + e + '")'
+                    }) + ");return n}")(E, t.frag)
+                }
+
+                function l(e) {
+                    e || (e = t);
+                    var o = r(e);
+                    return !E.shivCSS || u || o.hasCSS || (o.hasCSS = !!n(e, "article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")), d || c(e, o), e
+                }
+                var u, d, f = "3.7.3",
+                    m = e.html5 || {},
+                    h = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,
+                    p = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,
+                    v = "_html5shiv",
+                    g = 0,
+                    y = {};
+                ! function() {
+                    try {
+                        var e = t.createElement("a");
+                        e.innerHTML = "<xyz></xyz>", u = "hidden" in e, d = 1 == e.childNodes.length || function() {
+                            t.createElement("a");
+                            var e = t.createDocumentFragment();
+                            return "undefined" == typeof e.cloneNode || "undefined" == typeof e.createDocumentFragment || "undefined" == typeof e.createElement
+                        }()
+                    } catch (n) {
+                        u = !0, d = !0
+                    }
+                }();
+                var E = {
+                    elements: m.elements || "abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",
+                    version: f,
+                    shivCSS: m.shivCSS !== !1,
+                    supportsUnknownElements: d,
+                    shivMethods: m.shivMethods !== !1,
+                    type: "default",
+                    shivDocument: l,
+                    createElement: i,
+                    createDocumentFragment: s,
+                    addElements: a
+                };
+                e.html5 = E, l(t), "object" == typeof module && module.exports && (module.exports = E)
+            }("undefined" != typeof e ? e : this, t);
+            var h = d._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""];
+            d._prefixes = h;
+            var p = d.testStyles = c;
+            Modernizr.addTest("touchevents", function() {
+                var n;
+                if ("ontouchstart" in e || e.DocumentTouch && t instanceof DocumentTouch) n = !0;
+                else {
+                    var o = ["@media (", h.join("touch-enabled),("), "heartz", ")", "{#modernizr{top:9px;position:absolute}}"].join("");
+                    p(o, function(e) {
+                        n = 9 === e.offsetTop
+                    })
+                }
+                return n
+            });
+            var v = function() {
+                var t = e.matchMedia || e.msMatchMedia;
+                return t ? function(e) {
+                    var n = t(e);
+                    return n && n.matches || !1
+                } : function(t) {
+                    var n = !1;
+                    return c("@media " + t + " { #modernizr { position: absolute; } }", function(t) {
+                        n = "absolute" == (e.getComputedStyle ? e.getComputedStyle(t, null) : t.currentStyle).position
+                    }), n
+                }
+            }();
+            d.mq = v, a(), r(l), delete d.addTest, delete d.addAsyncTest;
+            for (var g = 0; g < Modernizr._q.length; g++) Modernizr._q[g]();
+            e.Modernizr = Modernizr
+        }(window, document);
+    </script>
+    <link href="favicon.ico" type="image/ico" rel="icon">
+    <link rel="apple-touch-icon" href="resources/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="resources/images/icons/manifest.json">
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+            </div>
+        </div>
+        </div>
+        <nav class="c-navbar" id="js-navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="c-navbar__container"><a href="index.html" class="c-navbar__brand"> Home </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <main id="main-content">
+            <div data-barba="wrapper">
+                <div data-barba="container" data-barba-namespace="home">
+                    <article>
+                        <style>
+                             :root {
+                                --bg-color: #ffffff
+                            }
+                        </style>
+                        <div class="c-home">
+                            <div id="js-home-items">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="c-home__item js-home-item">
+                                            <a href="" class="c-home__media-container js-home-item-media-container" style="background-color:#88a9bd;color:#88a9bd">
+                                                <picture>
+                                                    <source srcset="pictures/Portraits/p9.jpg" data-srcset="pictures/Portraits/p9.jpg?auto=compress,format&amp;width=1000" media="(min-width: 768px)">
+                                                    <source srcset="pictures/Portraits/p9.jpg" data-srcset="pictures/Portraits/p9.jpg?auto=compress,format&amp;width=600" media="(min-width: 300px)"><img src="pictures/Portraits/p9.jpg" class="c-home__media js-home-item-media lazyload"> </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="c-home__item js-home-item">
+                                            <a href="" class="c-home__media-container js-home-item-media-container" style="background-color:#b6e6e6;color:#b6e6e6">
+                                                <picture>
+                                                    <source srcset="pictures/portraits/p1.jpg" data-srcset="pictures/portraits/p1.jpg?auto=compress,format&amp;width=1000" media="(min-width: 768px)">
+                                                    <source srcset="pictures/portraits/p1.jpg" data-srcset="pictures/portraits/p1.jpg?auto=compress,format&amp;width=600" media="(min-width: 300px)"><img src="pictures/Portraits/p1.jpg" class="c-home__media js-home-item-media lazyload"> </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="c-home__item js-home-item">
+                                            <a href="" class="c-home__media-container js-home-item-media-container" style="background-color:#88a9bd;color:#88a9bd">
+                                                <picture>
+                                                    <source srcset="pictures/Portraits/p3.jpg" data-srcset="pictures/Portraits/p3.jpg?auto=compress,format&amp;width=1000" media="(min-width: 768px)">
+                                                    <source srcset="pictures/Portraits/p3.jpg" data-srcset="pictures/Portraits/p3.jpg?auto=compress,format&amp;width=600" media="(min-width: 300px)"><img src="pictures/Portraits/p3.jpg" class="c-home__media js-home-item-media lazyload"> </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="c-home__item js-home-item">
+                                            <a href="" class="c-home__media-container js-home-item-media-container" style="background-color:#e266ea;color:#e266ea">
+                                                <picture>
+                                                    <source srcset="pictures/Portraits/p2.jpg" data-srcset="pictures/Portraits/p2.jpg?auto=compress,format&amp;width=1000" media="(min-width: 768px)">
+                                                    <source srcset="pictures/Portraits/p2.jpg" data-srcset="pictures/Portraits/p2.jpg?auto=compress,format&amp;width=600" media="(min-width: 300px)"><img src="pictures/Portraits/p2.jpg" class="c-home__media js-home-item-media lazyload"> </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="c-home__item js-home-item">
+                                            <a href="" class="c-home__media-container js-home-item-media-container" style="background-color:#127763;color:#127763">
+                                                <picture>
+                                                    <source srcset="pictures/Portraits/p4.jpg" data-srcset="pictures/Portraits/p4.jpg?auto=compress,format&amp;width=1000" media="(min-width: 768px)">
+                                                    <source srcset="pictures/Portraits/p4.jpg" data-srcset="pictures/Portraits/p4.jpg?auto=compress,format&amp;width=600" media="(min-width: 300px)"><img src="pictures/Portraits/p4.jpg" class="c-home__media js-home-item-media lazyload"> </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="c-home__item js-home-item">
+                                            <a href="" class="c-home__media-container js-home-item-media-container" style="background-color:#98b8e9;color:#98b8e9">
+                                                <picture>
+                                                    <source srcset="pictures/Portraits/p5.jpg" data-srcset="pictures/Portraits/p5.jpg?auto=compress,format&amp;width=1000" media="(min-width: 768px)">
+                                                    <source srcset="pictures/Portraits/p5.jpg" data-srcset="pictures/Portraits/p5.jpg?auto=compress,format&amp;width=600" media="(min-width: 300px)"><img src="pictures/Portraits/p5.jpg" class="c-home__media js-home-item-media lazyload"> </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="c-home__item js-home-item">
+                                            <a href="" class="c-home__media-container js-home-item-media-container" style="background-color:#eb36eb;color:#eb36eb">
+                                                <picture>
+                                                    <source srcset="pictures/portraits/p7.jpg" data-srcset="pictures/portraits/p7.jpg?auto=compress,format&amp;width=1000" media="(min-width: 768px)">
+                                                    <source srcset="pictures/portraits/p7.jpg" data-srcset="pictures/portraits/p7.jpg?auto=compress,format&amp;width=600" media="(min-width: 300px)"><img src="pictures/portraits/p7.jpg" class="c-home__media js-home-item-media lazyload"> </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="c-home__item js-home-item">
+                                            <a href="" class="c-home__media-container js-home-item-media-container" style="background-color:#00ffad;color:#00ffad">
+                                                <picture>
+                                                    <source srcset="pictures/portraits/p8.jpg" data-srcset="pictures/portraits/p8.jpg?auto=compress,format&amp;width=1000" media="(min-width: 768px)">
+                                                    <source srcset="pictures/portraits/p8.jpg" data-srcset="pictures/portraits/p8.jpg?auto=compress,format&amp;width=600" media="(min-width: 300px)"><img src="pictures/portraits/p8.jpg" class="c-home__media js-home-item-media lazyload"> </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="js-home-items-cloned" style="display:none"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <script>
+            (function(o) {
+                var K = o.$LAB,
+                    y = "UseLocalXHR",
+                    z = "AlwaysPreserveOrder",
+                    u = "AllowDuplicates",
+                    A = "CacheBust",
+                    B = "BasePath",
+                    C = /^[^?#]*\//.exec(location.href)[0],
+                    D = /^\w+\:\/\/\/?[^\/]+/.exec(C)[0],
+                    i = document.head || document.getElementsByTagName("head"),
+                    L = (o.opera && Object.prototype.toString.call(o.opera) == "[object Opera]") || ("MozAppearance" in document.documentElement.style),
+                    q = document.createElement("script"),
+                    E = typeof q.preload == "boolean",
+                    r = E || (q.readyState && q.readyState == "uninitialized"),
+                    F = !r && q.async === true,
+                    M = !r && !F && !L;
+
+                function G(a) {
+                    return Object.prototype.toString.call(a) == "[object Function]"
+                }
+
+                function H(a) {
+                    return Object.prototype.toString.call(a) == "[object Array]"
+                }
+
+                function N(a, c) {
+                    var b = /^\w+\:\/\//;
+                    if (/^\/\/\/?/.test(a)) {
+                        a = location.protocol + a
+                    } else if (!b.test(a) && a.charAt(0) != "index.html") {
+                        a = (c || "") + a
+                    }
+                    return b.test(a) ? a : ((a.charAt(0) == "/" ? D : C) + a)
+                }
+
+                function s(a, c) {
+                    for (var b in a) {
+                        if (a.hasOwnProperty(b)) {
+                            c[b] = a[b]
+                        }
+                    }
+                    return c
+                }
+
+                function O(a) {
+                    var c = false;
+                    for (var b = 0; b < a.scripts.length; b++) {
+                        if (a.scripts[b].ready && a.scripts[b].exec_trigger) {
+                            c = true;
+                            a.scripts[b].exec_trigger();
+                            a.scripts[b].exec_trigger = null
+                        }
+                    }
+                    return c
+                }
+
+                function t(a, c, b, d) {
+                    a.onload = a.onreadystatechange = function() {
+                        if ((a.readyState && a.readyState != "complete" && a.readyState != "loaded") || c[b]) return;
+                        a.onload = a.onreadystatechange = null;
+                        d()
+                    }
+                }
+
+                function I(a) {
+                    a.ready = a.finished = true;
+                    for (var c = 0; c < a.finished_listeners.length; c++) {
+                        a.finished_listeners[c]()
+                    }
+                    a.ready_listeners = [];
+                    a.finished_listeners = []
+                }
+
+                function P(d, f, e, g, h) {
+                    setTimeout(function() {
+                        var a, c = f.real_src,
+                            b;
+                        if ("item" in i) {
+                            if (!i[0]) {
+                                setTimeout(arguments.callee, 25);
+                                return
+                            }
+                            i = i[0]
+                        }
+                        a = document.createElement("script");
+                        if (f.type) a.type = f.type;
+                        if (f.charset) a.charset = f.charset;
+                        if (h) {
+                            if (r) {
+                                e.elem = a;
+                                if (E) {
+                                    a.preload = true;
+                                    a.onpreload = g
+                                } else {
+                                    a.onreadystatechange = function() {
+                                        if (a.readyState == "loaded") g()
+                                    }
+                                }
+                                a.src = c
+                            } else if (h && c.indexOf(D) == 0 && d[y]) {
+                                b = new XMLHttpRequest();
+                                b.onreadystatechange = function() {
+                                    if (b.readyState == 4) {
+                                        b.onreadystatechange = function() {};
+                                        e.text = b.responseText + "\n//@ sourceURL=" + c;
+                                        g()
+                                    }
+                                };
+                                b.open("get.html", c);
+                                b.send()
+                            } else {
+                                a.type = "text/cache-script";
+                                t(a, e, "ready", function() {
+                                    i.removeChild(a);
+                                    g()
+                                });
+                                a.src = c;
+                                i.insertBefore(a, i.firstChild)
+                            }
+                        } else if (F) {
+                            a.async = false;
+                            t(a, e, "finished", g);
+                            a.src = c;
+                            i.insertBefore(a, i.firstChild)
+                        } else {
+                            t(a, e, "finished", g);
+                            a.src = c;
+                            i.insertBefore(a, i.firstChild)
+                        }
+                    }, 0)
+                }
+
+                function J() {
+                    var l = {},
+                        Q = r || M,
+                        n = [],
+                        p = {},
+                        m;
+                    l[y] = true;
+                    l[z] = false;
+                    l[u] = false;
+                    l[A] = false;
+                    l[B] = "";
+
+                    function R(a, c, b) {
+                        var d;
+
+                        function f() {
+                            if (d != null) {
+                                d = null;
+                                I(b)
+                            }
+                        }
+                        if (p[c.src].finished) return;
+                        if (!a[u]) p[c.src].finished = true;
+                        d = b.elem || document.createElement("script");
+                        if (c.type) d.type = c.type;
+                        if (c.charset) d.charset = c.charset;
+                        t(d, b, "finished", f);
+                        if (b.elem) {
+                            b.elem = null
+                        } else if (b.text) {
+                            d.onload = d.onreadystatechange = null;
+                            d.text = b.text
+                        } else {
+                            d.src = c.real_src
+                        }
+                        i.insertBefore(d, i.firstChild);
+                        if (b.text) {
+                            f()
+                        }
+                    }
+
+                    function S(c, b, d, f) {
+                        var e, g, h = function() {
+                                b.ready_cb(b, function() {
+                                    R(c, b, e)
+                                })
+                            },
+                            j = function() {
+                                b.finished_cb(b, d)
+                            };
+                        b.src = N(b.src, c[B]);
+                        b.real_src = b.src + (c[A] ? ((/\?.*$/.test(b.src) ? "&_" : "?_") + ~~(Math.random() * 1E9) + "=") : "");
+                        if (!p[b.src]) p[b.src] = {
+                            items: [],
+                            finished: false
+                        };
+                        g = p[b.src].items;
+                        if (c[u] || g.length == 0) {
+                            e = g[g.length] = {
+                                ready: false,
+                                finished: false,
+                                ready_listeners: [h],
+                                finished_listeners: [j]
+                            };
+                            P(c, b, e, ((f) ? function() {
+                                e.ready = true;
+                                for (var a = 0; a < e.ready_listeners.length; a++) {
+                                    e.ready_listeners[a]()
+                                }
+                                e.ready_listeners = []
+                            } : function() {
+                                I(e)
+                            }), f)
+                        } else {
+                            e = g[0];
+                            if (e.finished) {
+                                j()
+                            } else {
+                                e.finished_listeners.push(j)
+                            }
+                        }
+                    }
+
+                    function v() {
+                        var e, g = s(l, {}),
+                            h = [],
+                            j = 0,
+                            w = false,
+                            k;
+
+                        function T(a, c) {
+                            a.ready = true;
+                            a.exec_trigger = c;
+                            x()
+                        }
+
+                        function U(a, c) {
+                            a.ready = a.finished = true;
+                            a.exec_trigger = null;
+                            for (var b = 0; b < c.scripts.length; b++) {
+                                if (!c.scripts[b].finished) return
+                            }
+                            c.finished = true;
+                            x()
+                        }
+
+                        function x() {
+                            while (j < h.length) {
+                                if (G(h[j])) {
+                                    try {
+                                        h[j++]()
+                                    } catch (err) {}
+                                    continue
+                                } else if (!h[j].finished) {
+                                    if (O(h[j])) continue;
+                                    break
+                                }
+                                j++
+                            }
+                            if (j == h.length) {
+                                w = false;
+                                k = false
+                            }
+                        }
+
+                        function V() {
+                            if (!k || !k.scripts) {
+                                h.push(k = {
+                                    scripts: [],
+                                    finished: true
+                                })
+                            }
+                        }
+                        e = {
+                            script: function() {
+                                for (var f = 0; f < arguments.length; f++) {
+                                    (function(a, c) {
+                                        var b;
+                                        if (!H(a)) {
+                                            c = [a]
+                                        }
+                                        for (var d = 0; d < c.length; d++) {
+                                            V();
+                                            a = c[d];
+                                            if (G(a)) a = a();
+                                            if (!a) continue;
+                                            if (H(a)) {
+                                                b = [].slice.call(a);
+                                                b.unshift(d, 1);
+                                                [].splice.apply(c, b);
+                                                d--;
+                                                continue
+                                            }
+                                            if (typeof a == "string") a = {
+                                                src: a
+                                            };
+                                            a = s(a, {
+                                                ready: false,
+                                                ready_cb: T,
+                                                finished: false,
+                                                finished_cb: U
+                                            });
+                                            k.finished = false;
+                                            k.scripts.push(a);
+                                            S(g, a, k, (Q && w));
+                                            w = true;
+                                            if (g[z]) e.wait()
+                                        }
+                                    })(arguments[f], arguments[f])
+                                }
+                                return e
+                            },
+                            wait: function() {
+                                if (arguments.length > 0) {
+                                    for (var a = 0; a < arguments.length; a++) {
+                                        h.push(arguments[a])
+                                    }
+                                    k = h[h.length - 1]
+                                } else k = false;
+                                x();
+                                return e
+                            }
+                        };
+                        return {
+                            script: e.script,
+                            wait: e.wait,
+                            setOptions: function(a) {
+                                s(a, g);
+                                return e
+                            }
+                        }
+                    }
+                    m = {
+                        setGlobalDefaults: function(a) {
+                            s(a, l);
+                            return m
+                        },
+                        setOptions: function() {
+                            return v().setOptions.apply(null, arguments)
+                        },
+                        script: function() {
+                            return v().script.apply(null, arguments)
+                        },
+                        wait: function() {
+                            return v().wait.apply(null, arguments)
+                        },
+                        queueScript: function() {
+                            n[n.length] = {
+                                type: "script",
+                                args: [].slice.call(arguments)
+                            };
+                            return m
+                        },
+                        queueWait: function() {
+                            n[n.length] = {
+                                type: "wait",
+                                args: [].slice.call(arguments)
+                            };
+                            return m
+                        },
+                        runQueue: function() {
+                            var a = m,
+                                c = n.length,
+                                b = c,
+                                d;
+                            for (; --b >= 0;) {
+                                d = n.shift();
+                                a = a[d.type].apply(null, d.args)
+                            }
+                            return a
+                        },
+                        noConflict: function() {
+                            o.$LAB = K;
+                            return m
+                        },
+                        sandbox: function() {
+                            return J()
+                        }
+                    };
+                    return m
+                }
+                o.$LAB = J();
+                (function(a, c, b) {
+                    if (document.readyState == null && document[a]) {
+                        document.readyState = "loading";
+                        document[a](c, b = function() {
+                            document.removeEventListener(c, b, false);
+                            document.readyState = "complete"
+                        }, false)
+                    }
+                })("addEventListener", "DOMContentLoaded")
+            })(this);
+        </script>
+        <script>
+            $LAB.setGlobalDefaults({
+                Debug: false,
+                AllowDuplicates: false
+            }).script("resources/js/plugins/jquery-3.4.1.min.js").wait(function() {
+                window.lazySizesConfig = window.lazySizesConfig || {};
+                lazySizesConfig.loadMode = 1;
+                lazySizesConfig.expand = 0;
+            }).script("polyfill.io/v3/polyfill.minb5dd.js?features=default%2CArray.prototype.find%2CIntersectionObserver").script("resources/js/plugins/barba.umd.min.js").script("resources/js/plugins/lazysizes.min.js").script("resources/js/plugins/focus-visible.min.js").script("resources/js/plugins/gsap.min.js").script("resources/js/plugins/scrolltrigger.min.js").script("resources/js/plugins/jquery.touchswipe.min.js").wait().script("resources/js/global.min719e.js?v=-638760532").wait(function() {
+                BEGlobal.Init();
+                FEGlobal.Init();
+            });
+        </script>
